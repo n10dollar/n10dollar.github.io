@@ -1,9 +1,11 @@
-import {Container} from "@mui/material";
+import {Container, Typography} from "@mui/material";
 
 function About() {
     return (
         <Container>
-            About
+            <Typography>
+                yoooo
+            </Typography>
         </Container>
     )
 }
