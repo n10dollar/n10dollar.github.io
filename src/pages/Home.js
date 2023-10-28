@@ -1,4 +1,4 @@
-import {Box, Container, Paper, Stack, styled} from "@mui/material";
+import {Box, Container, Divider, List, ListItem, ListItemText, Paper, Stack, styled} from "@mui/material";
 import poker from "../assets/royal_flush.png";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -21,10 +21,23 @@ function Home() {
                 src={poker}
             / >
             <Stack>
-                <Item>This Could be you</Item>
-                <Item>This Could be you</Item>
-                <Item>This Could be you</Item>
-                <Item>This Could be you</Item>
+                <List component="nav" aria-label="mailbox folders">
+                    <ListItem>
+                        <ListItemText primary="Inbox" />
+                    </ListItem>
+                    <Divider />
+                    <ListItem>
+                        <ListItemText primary="Drafts" />
+                    </ListItem>
+                    <Divider />
+                    <ListItem>
+                        <ListItemText primary="Trash" />
+                    </ListItem>
+                    <Divider />
+                    <ListItem>
+                        <ListItemText primary="Spam" />
+                    </ListItem>
+                </List>
             </Stack>
         </Container>
     )
