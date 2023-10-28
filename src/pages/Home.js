@@ -1,4 +1,5 @@
 import {Box} from "@mui/material";
+import poker from "../assets/royal_flush.png";
 
 function Home() {
     return (
@@ -8,7 +9,7 @@ function Home() {
                 width: "100%",
                 height: "300px"
             }}
-            src={"https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg"}
+            src={poker}
         / >
     )
 }
