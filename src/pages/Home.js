@@ -18,7 +18,7 @@ function Home() {
                 <List component="nav" aria-label="mailbox folders">
                     {listItems.map((listItem, index) => (
                         <>
-                            <ListItem>
+                            <ListItem sx={{textAlign: "center"}}>
                                 <ListItemText primary={listItem} />
                             </ListItem>
                             <Divider />
