@@ -1,13 +1,7 @@
 import {Box, Container, Divider, List, ListItem, ListItemText, Paper, Stack, styled} from "@mui/material";
 import poker from "../assets/royal_flush.png";
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
+const listItems = ["A", "B", "C", "D"]
 
 function Home() {
     return (
@@ -22,21 +16,14 @@ function Home() {
             / >
             <Stack>
                 <List component="nav" aria-label="mailbox folders">
-                    <ListItem>
-                        <ListItemText primary="Inbox" />
-                    </ListItem>
-                    <Divider />
-                    <ListItem>
-                        <ListItemText primary="Drafts" />
-                    </ListItem>
-                    <Divider />
-                    <ListItem>
-                        <ListItemText primary="Trash" />
-                    </ListItem>
-                    <Divider />
-                    <ListItem>
-                        <ListItemText primary="Spam" />
-                    </ListItem>
+                    {listItems.map((listItem, index) => (
+                        <>
+                            <ListItem>
+                                <ListItemText primary={listItem} />
+                            </ListItem>
+                            <Divider />
+                        </>
+                    ))}
                 </List>
             </Stack>
         </Container>
