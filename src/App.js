@@ -10,7 +10,7 @@ import {Container} from "@mui/material";
 function App() {
     let router = (
         <>
-            <NavBar />
+
             <BrowserRouter>
                 <Routes>
                     <Route path={'/'}>
