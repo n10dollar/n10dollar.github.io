@@ -1,4 +1,14 @@
-import {Box, Container, Divider, List, ListItem, ListItemText, Paper, Stack, styled, Typography} from "@mui/material";
+import {
+    Box,
+    Container,
+    Divider,
+    Grid,
+    List,
+    ListItem,
+    ListItemText,
+    Stack,
+    Typography
+} from "@mui/material";
 import {Image} from "mui-image";
 
 const listItems = ["A", "B", "C", "D"]
@@ -6,23 +16,17 @@ const listItems = ["A", "B", "C", "D"]
 function Home() {
     return (
         <Container>
-            <Box
-                component={"img"}
-                sx={{
-                    width: "100%",
-                    height: "300px"
-                }}
-
-            / >
-            <Container>
-                <Box>
-                    <Stack>
+            <Grid container spacing={0}>
+                <Grid xs={12} sm={6}>
+                    <Container style={{ background: '#ffff00' }}>
                         <Typography>Hi!</Typography>
                         <Typography>I'm Neil</Typography>
-                    </Stack>
-                </Box>
-                <Image src={"/royal_flush.png"} />
-            </Container>
+                    </Container>
+                </Grid>
+                <Grid xs={12} sm={6} >
+                    <Image src={"/royal_flush.png"} />
+                </Grid>
+            </Grid>
             <Stack>
                 <List component="nav" aria-label="mailbox folders">
                     {listItems.map((listItem, index) => (
