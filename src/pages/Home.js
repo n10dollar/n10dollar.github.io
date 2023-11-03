@@ -11,7 +11,7 @@ import {
 import {Image} from "mui-image";
 
 // model website: https://www.taniarascia.com/
-const listItems = ["A", "B", "C", "D"]
+const listItems = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
 
 function Home() {
     return (
