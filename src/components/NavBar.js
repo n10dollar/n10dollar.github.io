@@ -23,7 +23,7 @@ function NavBar() {
                 </Toolbar>
             </Container>
         </AppBar>
-)
+    )
 }
 
 export default NavBar
