@@ -1,5 +1,5 @@
-import {Box, Container, Divider, List, ListItem, ListItemText, Paper, Stack, styled} from "@mui/material";
-import poker from "../assets/royal_flush.png";
+import {Box, Container, Divider, List, ListItem, ListItemText, Paper, Stack, styled, Typography} from "@mui/material";
+import {Image} from "mui-image";
 
 const listItems = ["A", "B", "C", "D"]
 
@@ -12,8 +12,17 @@ function Home() {
                     width: "100%",
                     height: "300px"
                 }}
-                src={poker}
+
             / >
+            <Container>
+                <Box>
+                    <Stack>
+                        <Typography>Hi!</Typography>
+                        <Typography>I'm Neil</Typography>
+                    </Stack>
+                </Box>
+                <Image src={"/royal_flush.png"} />
+            </Container>
             <Stack>
                 <List component="nav" aria-label="mailbox folders">
                     {listItems.map((listItem, index) => (
