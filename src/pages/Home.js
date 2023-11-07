@@ -9,6 +9,7 @@ import {
     Typography
 } from "@mui/material";
 import {Image} from "mui-image";
+import ProjectCard from "../components/ProjectCard";
 
 // model website: https://www.taniarascia.com/
 const listItems = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
@@ -44,6 +45,9 @@ function Home() {
                     ))}
                 </List>
             </Stack>
+            <ProjectCard imageURL={"/neiltendolkar.png"} header={"HEADERRR"}>
+                This is some HTML
+            </ProjectCard>
         </Container>
     )
 }

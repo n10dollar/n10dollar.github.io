@@ -14,6 +14,7 @@ function App() {
                     <Route path={'/'}>
                         <Route index element={<Home/>}/>
                         <Route path={'about'} element={<About/>}/>
+                        <Route path={'academics'} element={<Home/>}/>
                         <Route path={'chess'} element={<Chess/>}/>
                     </Route>
                 </Routes>
