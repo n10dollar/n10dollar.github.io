@@ -12,11 +12,9 @@ function NavBar() {
                     <Stack direction={"row"} spacing={2}>
                         {pages.map((page, index) => (
                             // https://mui.com/material-ui/guides/routing/#link
-                            <Link to={"about"}>
-                                <Button color={"warning"}>
-                                    <Typography sx={{fontWeight: 'bold'}}>{page}</Typography>
-                                </Button>
-                            </Link>
+                            <Button component={Link} to={page.toLowerCase()} color={"warning"}>
+                                <Typography sx={{fontWeight: 'bold'}}>{page}</Typography>
+                            </Button>
                         ))}
                     </Stack>
                 </Toolbar>

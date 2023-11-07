@@ -12,6 +12,7 @@ function App() {
             <Routes>
                 <Route path={'/'}>
                     <Route index element={<Home/>}/>
+                    <Route path={'home'} element={<Home/>}/>
                     <Route path={'about'} element={<About/>}/>
                     <Route path={'academics'} element={<Home/>}/>
                     <Route path={'chess'} element={<Chess/>}/>
