@@ -1,24 +1,24 @@
-import {Card, CardActionArea, CardContent, CardMedia, Typography} from "@mui/material";
-import {Link} from 'react-router-dom';
+import {Card, CardActionArea, CardMedia, CardContent, Typography} from "@mui/material"
+import {Link} from "react-router-dom"
 
-function ProjectCard({imageURL, header, children}) {
+function ProjectCard({month, year, header, message, redirect}) {
     return (
         <Card variant="outlined">
-            <Link to={"about"}><CardActionArea>
-                <CardMedia
-                    component={"img"}
-                    image={imageURL}
-                    alt={"project_card"}
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        {header}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        {children}
-                    </Typography>
-                </CardContent>
-            </CardActionArea></Link>
+            <Link to={redirect}>
+                <CardActionArea>
+                    <CardContent>
+                        <Typography gutterBottom variant="body" component="div">
+                            {`${month} ${year}`}
+                        </Typography>
+                        <Typography gutterBottom variant="h5" component="div">
+                            {header}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            {message}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>   
+            </Link>
         </Card>
     )
 }

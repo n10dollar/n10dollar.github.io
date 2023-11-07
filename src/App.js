@@ -6,23 +6,19 @@ import Chess from "./pages/Chess";
 import NavBar from "./components/NavBar";
 
 function App() {
-    let router = (
-        <>
+    return (
+        <BrowserRouter>
             <NavBar />
-            <BrowserRouter>
-                <Routes>
-                    <Route path={'/'}>
-                        <Route index element={<Home/>}/>
-                        <Route path={'about'} element={<About/>}/>
-                        <Route path={'academics'} element={<Home/>}/>
-                        <Route path={'chess'} element={<Chess/>}/>
-                    </Route>
-                </Routes>
-            </BrowserRouter>
-        </>
+            <Routes>
+                <Route path={'/'}>
+                    <Route index element={<Home/>}/>
+                    <Route path={'about'} element={<About/>}/>
+                    <Route path={'academics'} element={<Home/>}/>
+                    <Route path={'chess'} element={<Chess/>}/>
+                </Route>
+            </Routes>
+        </BrowserRouter>
     )
-
-    return router;
 }
 
 export default App;

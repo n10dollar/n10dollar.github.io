@@ -1,17 +1,23 @@
 [
     {
-        "projectURL": "/chess_proj.jpeg",
-        "header": "header",
-        "message": "This is one of my chess projects!"
+        "month": "Nov",
+        "year": "2023",
+        "header": "Chess",
+        "message": "This is one of my chess projects!",
+        "redirect": "chess"
     },
     {
-        "projectURL": "/poker_proj.jpeg",
-        "header": "header",
-        "message": "This is one of my poker projects!"
+        "month": "Apr",
+        "year": "2023",
+        "header": "Poker",
+        "message": "This is one of my poker projects!",
+        "redirect": "about"
     },
     {
-        "projectURL": "/neiltendolkar.png",
-        "header": "header",
-        "message": "This is one of my NEIL projects!"
+        "month": "Aug",
+        "year": "2022",
+        "header": "NEIL",
+        "message": "This is one of my NEIL projects!",
+        "redirect": "food"
     }
 ]
