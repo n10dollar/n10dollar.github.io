@@ -1,11 +1,11 @@
 import {Container} from "@mui/material";
 
-function Chess() {
+function Projects() {
     return (
         <Container>
-            Chess
+            Projects
         </Container>
     )
 }
 
-export default Chess
+export default Projects

@@ -4,14 +4,13 @@ import {
     Grid,
     Typography,
     Stack
-} from "@mui/material";
-import {Image} from "mui-image";
-import projects from "../data/projects.json"
+} from "@mui/material"
+import {Image} from "mui-image"
 import ProjectCard from "../components/ProjectCard"
 
-// model website: https://www.taniarascia.com/
-const listItems = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+import projects from "../data/projects.json"
 
+// model website: https://www.taniarascia.com/
 function Home() {
     return (
         <Container>
