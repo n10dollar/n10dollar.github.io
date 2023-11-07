@@ -1,0 +1,17 @@
+[
+    {
+        "projectURL": "/chess_proj.jpeg",
+        "header": "header",
+        "message": "This is one of my chess projects!"
+    },
+    {
+        "projectURL": "/poker_proj.jpeg",
+        "header": "header",
+        "message": "This is one of my poker projects!"
+    },
+    {
+        "projectURL": "/neiltendolkar.png",
+        "header": "header",
+        "message": "This is one of my NEIL projects!"
+    }
+]

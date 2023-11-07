@@ -6,13 +6,16 @@ import {
     ListItem,
     ListItemText,
     Stack,
-    Typography
+    Typography,
+    Button
 } from "@mui/material";
 import {Image} from "mui-image";
 import ProjectCard from "../components/ProjectCard";
+import projectsJSON from "../data/projects.json"
 
 // model website: https://www.taniarascia.com/
 const listItems = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+const projects = projectsJSON
 
 function Home() {
     return (
@@ -45,9 +48,15 @@ function Home() {
                     ))}
                 </List>
             </Stack>
-            <ProjectCard imageURL={"/neiltendolkar.png"} header={"HEADERRR"}>
-                This is some HTML
-            </ProjectCard>
+            <Grid container spacing={2} py={4}>
+                {projects.map((project, index) => (
+                    <Grid item xs={12} sm={6} md={4}>
+                        <ProjectCard imageURL={project.projectURL} header={project.header}>
+                            {project.message}
+                        </ProjectCard>
+                    </Grid>
+                ))}
+            </Grid>
         </Container>
     )
 }
