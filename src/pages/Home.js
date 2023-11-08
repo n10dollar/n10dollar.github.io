@@ -33,7 +33,7 @@ function Home() {
             </Grid>
             <Grid container spacing={2} py={4}>
                 {projects.map((project, index) => (
-                    <Grid item xs={12} sm={6} md={4}>
+                    <Grid item key={index} xs={12} sm={6} md={4}>
                         <ProjectCard {...project} />
                     </Grid>
                 ))}
