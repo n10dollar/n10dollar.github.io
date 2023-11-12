@@ -12,8 +12,23 @@ import { sortProjects } from "../utils/general"
 import projects from "../data/projects"
 const sortedProjects = sortProjects(projects)
 
+const TEST_LENGTH = 12
+const testProj = {
+    "month": "M",
+    "year": 9999,
+    "header": "H",
+    "message": "Lorem ipsum more filler text",
+    "redirect": "R"
+}
+
 // model website: https://www.taniarascia.com/
 function Home() {
+    let fullProjects = [...sortedProjects]
+    while (fullProjects.length < TEST_LENGTH) {
+        fullProjects.push(testProj)
+        console.log(fullProjects)
+    }
+
     return (
         <Container>
             <Grid container spacing={5} py={4}>
@@ -36,7 +51,7 @@ function Home() {
             <Container className={"projects"} py={2}>
                 <Typography variant={"h4"}>Projects</Typography>
                 <Grid container spacing={2} py={1}>
-                    {sortedProjects.map((project, index) => (
+                    {fullProjects.map((project, index) => (
                         <Grid item key={index} xs={12} sm={6} md={4}>
                             <ProjectCard {...project} />
                         </Grid>
