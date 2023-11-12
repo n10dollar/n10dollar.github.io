@@ -5,16 +5,18 @@ import {
     Typography,
     Stack
 } from "@mui/material"
-import {Image} from "mui-image"
+import Image from "mui-image"
 import ProjectCard from "../components/ProjectCard"
+import { sortProjects } from "../utils/general"
 
-import projects from "../data/projects.json"
+import projects from "../data/projects"
+const sortedProjects = sortProjects(projects)
 
 // model website: https://www.taniarascia.com/
 function Home() {
     return (
         <Container>
-            <Grid container spacing={2} py={4}>
+            <Grid container spacing={5} py={4}>
                 <Grid item xs={12} sm={6} my={{xs: 0, sm: 5}}>
                     <Stack spacing={1}>
                         <Typography variant={"h3"}>Hey, I'm Neil!</Typography>
@@ -31,13 +33,16 @@ function Home() {
                     <Image src={"/neiltendolkar.png"} />
                 </Grid>
             </Grid>
-            <Grid container spacing={2} py={4}>
-                {projects.map((project, index) => (
-                    <Grid item key={index} xs={12} sm={6} md={4}>
-                        <ProjectCard {...project} />
-                    </Grid>
-                ))}
-            </Grid>
+            <Container className={"projects"} py={2}>
+                <Typography variant={"h4"}>Projects</Typography>
+                <Grid container spacing={2} py={1}>
+                    {sortedProjects.map((project, index) => (
+                        <Grid item key={index} xs={12} sm={6} md={4}>
+                            <ProjectCard {...project} />
+                        </Grid>
+                    ))}
+                </Grid>
+            </Container>
         </Container>
     )
 }

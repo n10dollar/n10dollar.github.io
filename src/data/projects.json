@@ -1,23 +1,23 @@
 [
     {
+        "month": "Sep",
+        "year": 2023,
+        "header": "IEEE-Time",
+        "message": "My project with IEEE @ Berkeley",
+        "redirect": "projects"
+    },
+    {
         "month": "Nov",
-        "year": "2023",
-        "header": "Chess",
-        "message": "This is one of my chess projects!",
+        "year": 2023,
+        "header": "NeilSite",
+        "message": "The code for my personal website you see here!",
         "redirect": "projects"
     },
     {
-        "month": "Apr",
-        "year": "2023",
-        "header": "Poker",
-        "message": "This is one of my poker projects!",
-        "redirect": "projects"
-    },
-    {
-        "month": "Aug",
-        "year": "2022",
-        "header": "NEIL",
-        "message": "This is one of my NEIL projects!",
+        "month": "May",
+        "year": 2022,
+        "header": "Keyboard Visualizer",
+        "message": "This is a keyboard visualizer I built",
         "redirect": "projects"
     }
 ]
