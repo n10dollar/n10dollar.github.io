@@ -20,15 +20,11 @@ const testProj = {
     "message": "Lorem ipsum more filler text",
     "redirect": "R"
 }
+while (sortedProjects.length < TEST_LENGTH) 
+    sortedProjects.push(testProj)
 
 // model website: https://www.taniarascia.com/
 function Home() {
-    let fullProjects = [...sortedProjects]
-    while (fullProjects.length < TEST_LENGTH) {
-        fullProjects.push(testProj)
-        console.log(fullProjects)
-    }
-
     return (
         <Container>
             <Grid container spacing={5} py={4}>
@@ -51,7 +47,7 @@ function Home() {
             <Container className={"projects"} py={2}>
                 <Typography variant={"h4"}>Projects</Typography>
                 <Grid container spacing={2} py={1}>
-                    {fullProjects.map((project, index) => (
+                    {sortedProjects.map((project, index) => (
                         <Grid item key={index} xs={12} sm={6} md={4}>
                             <ProjectCard {...project} />
                         </Grid>
