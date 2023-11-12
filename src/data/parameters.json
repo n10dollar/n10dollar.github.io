@@ -1,3 +1,17 @@
 {
-    "pages": ["home", "about", "projects", "music"]
+    "pages": ["home", "about", "projects", "music"],
+    "footerLinks": [
+        {
+            "service": "Email",
+            "URL": "mailto:ntendolkar@berkeley.edu"
+        },
+        {
+            "service": "GitHub",
+            "URL": "https://www.github.com/n10dollar"
+        },
+        {
+            "service": "LinkedIn",
+            "URL": "https://www.linkedin.com/in/n10dollar"
+        }
+    ]
 }

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 import parameters from "../data/parameters.json"
 
 // https://mui.com/material-ui/react-app-bar/
-function NavBar() {
+function Header() {
     return (
         <AppBar sx={{backgroundColor: "black"}} position={"sticky"}>
             <Container disableGutters>
@@ -27,4 +27,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default Header

@@ -2,14 +2,15 @@ import './App.css';
 import {lazy, Suspense} from "react"
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
-import NavBar from "./components/NavBar";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 import parameters from "./data/parameters"
 
 function App() {
     return (
         <BrowserRouter>
-            <NavBar />
+            <Header />
             <Suspense fallback={<span />}>
                 <Routes>
                     <Route path={'/'}>
@@ -27,6 +28,7 @@ function App() {
                     </Route>
                 </Routes>
             </Suspense>
+            <Footer />
         </BrowserRouter>
     )
 }

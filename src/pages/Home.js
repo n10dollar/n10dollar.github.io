@@ -10,18 +10,19 @@ import ProjectCard from "../components/ProjectCard"
 import { sortProjects } from "../utils/general"
 
 import projects from "../data/projects"
-const sortedProjects = sortProjects(projects)
 
 const TEST_LENGTH = 12
 const testProj = {
-    "month": "M",
-    "year": 9999,
+    "month": "Jan",
+    "year": 999,
     "header": "H",
     "message": "Lorem ipsum more filler text",
     "redirect": "R"
 }
-while (sortedProjects.length < TEST_LENGTH) 
-    sortedProjects.push(testProj)
+while (projects.length < TEST_LENGTH) 
+    projects.push({...testProj})
+
+const sortedProjects = sortProjects(projects)
 
 // model website: https://www.taniarascia.com/
 function Home() {
