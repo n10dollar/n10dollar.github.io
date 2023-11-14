@@ -9,7 +9,7 @@ function Header() {
         <AppBar sx={{backgroundColor: "black"}} position={"sticky"}>
             <Container disableGutters>
                 <Container>
-                    <Typography variant={"h4"} p={2} pb={1}>
+                    <Typography variant={"h4"} pt={2} pb={1}>
                         Neil Tendolkar
                     </Typography>
                 </Container>

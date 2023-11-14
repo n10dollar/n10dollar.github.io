@@ -3,27 +3,10 @@ import {
     Divider,
     Grid,
     Typography,
-    Stack,
-    Box
+    Stack
 } from "@mui/material"
 import Image from "mui-image"
-import ProjectCard from "../components/ProjectCard"
-import { sortProjects } from "../utils/general"
-
-import projects from "../data/projects"
-
-const TEST_LENGTH = 12
-const testProj = {
-    "month": "Jan",
-    "year": 999,
-    "header": "H",
-    "message": "Lorem ipsum more filler text",
-    "redirect": "R"
-}
-while (projects.length < TEST_LENGTH) 
-    projects.push({...testProj})
-
-const sortedProjects = sortProjects(projects)
+import ProjectDeck from "../components/ProjectDeck"
 
 // model website: https://www.taniarascia.com/
 function Home() {
@@ -46,16 +29,7 @@ function Home() {
                     <Image src={"/neiltendolkar.png"} />
                 </Grid>
             </Grid>
-            <Box className={"projects"} py={2}>
-                <Typography variant={"h4"}>Projects</Typography>
-                <Grid container spacing={2} py={1}>
-                    {sortedProjects.map((project, index) => (
-                        <Grid item key={index} xs={12} sm={6} md={4}>
-                            <ProjectCard {...project} />
-                        </Grid>
-                    ))}
-                </Grid>
-            </Box>
+            <ProjectDeck />
         </Container>
     )
 }
