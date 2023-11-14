@@ -1,32 +1,35 @@
 import {Container, Grid, Typography} from "@mui/material";
 import {useState, useEffect} from "react"
 
-const URL = "../data/text/about_me.txt"
+import URL from "../data/text/about_me.txt"
 
 function About() {
     const [aboutMe, setAboutMe] = useState("")
 
     useEffect(() => {
-        const fetchText = async () => {
-            try {
-                const response = await fetch(URL)
-                if (!response.ok) 
-                    throw new Error("Error!")
-                const textContext = await response.text()
+        fetch(URL)
+            .then(response => response.text())
+            .then(textContext => {
                 setAboutMe(textContext)
                 console.log(textContext)
-            } catch(error) {
-                console.error(error)
-            }
-        }
-
-        fetchText()
+            })
+            .catch(error => console.log(error))
     }, [])
 
     return (
         <Container>
-            <Grid container>
-                <Grid item>
+            <Grid container spacing={2}>
+                <Grid item xs={12} md={6}>
+                    <Typography variant={"body1"}>
+                        {aboutMe}
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={3}>
+                    <Typography variant={"body1"}>
+                        {aboutMe}
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={3}>
                     <Typography variant={"body1"}>
                         {aboutMe}
                     </Typography>
