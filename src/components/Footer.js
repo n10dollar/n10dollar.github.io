@@ -7,13 +7,11 @@ function Footer() {
     return (
         <AppBar sx={{backgroundColor: "black"}} position={"relative"}>
             <Container disableGutters>
-                <Toolbar sx={
-                    {
+                <Toolbar sx={{
                         display: 'flex', 
                         justifyContent: 'center', 
                         width: '100%'
-                    }}
-                >
+                    }}>
                     <Stack direction={"row"} spacing={2}>
                         {parameters.footerLinks.map((link, index) => (
                             // https://mui.com/material-ui/guides/routing/#link

@@ -3,7 +3,8 @@ import {
     Divider,
     Grid,
     Typography,
-    Stack
+    Stack,
+    Box
 } from "@mui/material"
 import Image from "mui-image"
 import ProjectCard from "../components/ProjectCard"
@@ -45,7 +46,7 @@ function Home() {
                     <Image src={"/neiltendolkar.png"} />
                 </Grid>
             </Grid>
-            <Container className={"projects"} py={2}>
+            <Box className={"projects"} py={2}>
                 <Typography variant={"h4"}>Projects</Typography>
                 <Grid container spacing={2} py={1}>
                     {sortedProjects.map((project, index) => (
@@ -54,7 +55,7 @@ function Home() {
                         </Grid>
                     ))}
                 </Grid>
-            </Container>
+            </Box>
         </Container>
     )
 }
