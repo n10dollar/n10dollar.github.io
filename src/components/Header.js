@@ -9,19 +9,25 @@ function Header() {
         <AppBar sx={{backgroundColor: "black"}} position={"sticky"}>
             <Container disableGutters>
                 <Container>
-                    <Typography variant={"h4"} pt={2} pb={1}>
-                        Neil Tendolkar
-                    </Typography>
+                    <Button
+                        component={Link}
+                        to={"home"}
+                        color={"warning"}
+                        sx={{px: 0, minWidth:0}}>
+                        <Typography variant={"h4"} pt={2} pb={1}>
+                            Neil Tendolkar
+                        </Typography>
+                    </Button>
                 </Container>
                 <Divider color={"white"} mt={2} />
                 <Toolbar>
                     <Stack direction={"row"} spacing={4}>
-                        {parameters.pages.map((page, index) => (
+                        {parameters.pages.slice(1).map((page, index) => (
                             // https://mui.com/material-ui/guides/routing/#link
+                            // excludes first page to avoid duplicate with name
                             <Button 
                                 key={index}
                                 component={Link}
-                                p={40}
                                 to={page.toLowerCase()}
                                 color={"warning"}
                                 sx={{px: 0, minWidth:0}}>
