@@ -1,6 +1,10 @@
+import {Container} from "@mui/material"
+
 function Music() {
     return (
-        <div>music!</div>
+        <Container>
+            Music!
+        </Container>
     )
 }
 
