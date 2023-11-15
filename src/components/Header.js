@@ -21,7 +21,7 @@ function Header() {
                 </Container>
                 <Divider color={"white"} mt={2} />
                 <Toolbar>
-                    <Stack direction={"row"} spacing={4}>
+                    <Stack direction={"row"} spacing={4} flexWrap="wrap">
                         {parameters.pages.slice(1).map((page, index) => (
                             // https://mui.com/material-ui/guides/routing/#link
                             // excludes first page to avoid duplicate with name

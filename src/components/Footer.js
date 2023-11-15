@@ -12,7 +12,7 @@ function Footer() {
                         justifyContent: 'center', 
                         width: '100%'
                     }}>
-                    <Stack direction={"row"} spacing={2}>
+                    <Stack direction={"row"} spacing={2} flexWrap="wrap">
                         {parameters.footerLinks.map((link, index) => (
                             // https://mui.com/material-ui/guides/routing/#link
                             <Button 
