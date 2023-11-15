@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/neil-site/static/css/main.073c9b0a.css",
+    "main.js": "/neil-site/static/js/main.5e753834.js",
+    "static/js/47.a3a03130.chunk.js": "/neil-site/static/js/47.a3a03130.chunk.js",
+    "static/js/797.128f3686.chunk.js": "/neil-site/static/js/797.128f3686.chunk.js",
+    "static/js/923.3a83a75c.chunk.js": "/neil-site/static/js/923.3a83a75c.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/neil-site/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/neil-site/index.html",
+    "static/media/about_me.txt": "/neil-site/static/media/about_me.94858304a4621b439c80.txt",
+    "main.073c9b0a.css.map": "/neil-site/static/css/main.073c9b0a.css.map",
+    "main.5e753834.js.map": "/neil-site/static/js/main.5e753834.js.map",
+    "47.a3a03130.chunk.js.map": "/neil-site/static/js/47.a3a03130.chunk.js.map",
+    "797.128f3686.chunk.js.map": "/neil-site/static/js/797.128f3686.chunk.js.map",
+    "923.3a83a75c.chunk.js.map": "/neil-site/static/js/923.3a83a75c.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/neil-site/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.5e753834.js"
+  ]
+}
