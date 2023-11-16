@@ -24,6 +24,4 @@ yarn-error.log*
 
 # manually added
 .idea
-*.jpeg
-*.png
 .env
