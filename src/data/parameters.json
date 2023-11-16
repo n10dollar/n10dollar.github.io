@@ -13,5 +13,27 @@
             "service": "LinkedIn",
             "URL": "https://www.linkedin.com/in/n10dollar"
         }
+    ],
+    "aboutImages": [
+        {
+            "title": "pic",
+            "src": "chess_proj.jpeg"
+        },
+        {
+            "title": "pic",
+            "src": "neiltendolkar.png"
+        },
+        {
+            "title": "pic",
+            "src": "poker_proj.jpeg"
+        },
+        {
+            "title": "pic",
+            "src": "royal_flush.png"
+        },
+        {
+            "title": "pic",
+            "src": "sauron.png"
+        }
     ]
 }

@@ -2,6 +2,7 @@ import {Container, Grid, Typography} from "@mui/material";
 import {useState, useEffect} from "react"
 
 import URL from "../data/text/about_me.txt"
+import ImageGallery from "../components/ImageGallery";
 
 function About() {
     const [aboutMe, setAboutMe] = useState("")
@@ -35,6 +36,7 @@ function About() {
                     </Typography>
                 </Grid>
             </Grid>
+            <ImageGallery />
         </Container>
     )
 }
