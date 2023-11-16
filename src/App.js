@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import parameters from "./data/parameters"
+import TitleWrapper from './components/TitleWrapper';
 
 function App() {
     return (
@@ -14,7 +15,7 @@ function App() {
             <Suspense fallback={<span />}>
                 <Routes>
                     <Route path={'/'}>
-                        <Route index element={<Home/>}/>
+                        <Route index element={<TitleWrapper component={Home} title={"Home"}/>} />
                         {parameters.pages.map((page, index) => {
                             const capsPage = page.charAt(0).toUpperCase() + page.slice(1)
                             const ComponentPage = lazy(() => import(`./pages/${capsPage}`))
@@ -22,7 +23,7 @@ function App() {
                                 <Route 
                                     key={index} 
                                     path={page} 
-                                    element={<ComponentPage />}
+                                    element={<TitleWrapper component={ComponentPage} title={capsPage} />}
                                 />)
                         })}
                     </Route>
