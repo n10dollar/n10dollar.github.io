@@ -1,10 +1,20 @@
-import {Container} from "@mui/material"
+import {Container, Stack, Typography} from "@mui/material"
+import {useState, useEffect} from "react"
+
 import ProjectDeck from "../components/ProjectDeck"
+import {fetchText} from "../utils/general"
+
 
 function Projects() {
+    const [projects, setProjects] = useState("")
+    useEffect(() => fetchText("projects.txt", setProjects), [projects])
+
     return (
         <Container>
-            <ProjectDeck />
+            <Stack py={2} spacing={2}>
+                <Typography dangerouslySetInnerHTML={{ __html: projects }}></Typography>
+                <ProjectDeck />
+            </Stack>
         </Container>
     )
 }

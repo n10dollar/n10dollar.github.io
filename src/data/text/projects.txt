@@ -1,0 +1,6 @@
+These are all my software projects over the years. 
+<br/>
+In high school, I started out with no framework/library knowledge, but now, I've built several of these projects using industry standard technologies.
+<br/>
+My favorite so far is the NeilSite—the front-end for this very personal website.
+<br/>
