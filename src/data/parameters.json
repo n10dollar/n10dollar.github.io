@@ -35,5 +35,35 @@
             "title": "pic",
             "src": "sauron.png"
         }
+    ],
+    "aboutFacts": [
+        {
+            "title": "Comp Sci",
+            "description": "My biggest passion is CS. There are just endless creative (and professional) opportunies that lie with developing software."
+        },
+        {
+            "title": "Music",
+            "description": "I started producing music about 2 years ago. Nothing beats the satisfaction of exporting a real banger."
+        },
+        {
+            "title": "Chess",
+            "description": "I've been playing chess since the 2nd grade. I used to play in tournaments but now just online.Caro-Kann for the win!"
+        },
+        {
+            "title": "Poker",
+            "description": "I picked up poker this year and am having a blast with friends and club sessions. I almost got a royal flush once!"
+        },
+        {
+            "title": "Gym",
+            "description": "Bench 225! 180? Eh, more like sub-135 for now, but I'm working on it! I've been a few months consistent now."
+        },
+        {
+            "title": "Sports",
+            "description": "A game of basketball or tennis is my jam when it comes to sports. It brings some fun, friendly competition to a reunion."
+        },
+        {
+            "title": "Cooking",
+            "description": "Ever since moving into an apt, I've started cooking my own meals. It took a few tries, but my Risotto and Jambalaya are to die for."
+        }
     ]
 }

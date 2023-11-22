@@ -24,7 +24,6 @@ const sortedProjects = sortProjects(projects)
 function ProjectDeck() {
     return (
         <Box className={"projects"} py={2}>
-            <Typography variant={"h4"}>Projects</Typography>
             <Grid container spacing={2} py={1}>
                 {sortedProjects.map((project, index) => (
                     <Grid item key={index} xs={12} sm={6} md={4}>
