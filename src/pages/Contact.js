@@ -1,9 +1,11 @@
-import {Container} from "@mui/material"
+import {Container, Box, Button} from "@mui/material"
+
+import SendEmail from "../components/SendEmail"
 
 function Contact() {
     return (
         <Container>
-            Contact!
+            <SendEmail />
         </Container>
     )
 }
