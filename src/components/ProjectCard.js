@@ -1,10 +1,12 @@
-import {Card, CardActionArea, CardMedia, CardContent, Typography} from "@mui/material"
+import {Card, CardActionArea, CardContent, Typography} from "@mui/material"
 import {Link} from "react-router-dom"
 
 function ProjectCard({month, year, header, message, redirect}) {
+    let optionalProps = redirect ? {component: Link, to: redirect}: {}
+
     return (
         <Card variant="outlined">
-            <CardActionArea component={Link} to={redirect}>
+            <CardActionArea {...optionalProps}>
                 <CardContent>
                     <Typography gutterBottom variant="body" component="div">
                         {`${month} ${year}`}

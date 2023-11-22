@@ -8,16 +8,16 @@ import {sortProjects} from "../utils/general"
 
 import projects from "../data/projects"
 
-const TEST_LENGTH = 12
-const testProj = {
-    "month": "Jan",
-    "year": 999,
-    "header": "H",
-    "message": "Lorem ipsum more filler text",
-    "redirect": "R"
-}
-while (projects.length < TEST_LENGTH) 
-    projects.push({...testProj})
+// const TEST_LENGTH = 12
+// const testProj = {
+//     "month": "Jan",
+//     "year": 999,
+//     "header": "H",
+//     "message": "Lorem ipsum more filler text",
+//     "redirect": "R"
+// }
+// while (projects.length < TEST_LENGTH) 
+//     projects.push({...testProj})
 
 const sortedProjects = sortProjects(projects)
 

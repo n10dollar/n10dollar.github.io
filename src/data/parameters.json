@@ -1,5 +1,5 @@
 {
-    "pages": ["home", "about", "projects", "music"],
+    "pages": ["home", "about", "projects", "contact"],
     "footerLinks": [
         {
             "service": "Email",

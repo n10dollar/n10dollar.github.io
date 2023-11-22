@@ -3,21 +3,20 @@
         "month": "Sep",
         "year": 2023,
         "header": "IEEE-Time",
-        "message": "My project with IEEE @ Berkeley",
-        "redirect": "projects"
+        "message": "My project with IEEE @ Berkeley"
     },
     {
         "month": "Nov",
         "year": 2023,
         "header": "NeilSite",
-        "message": "The code for my personal website you see here!",
-        "redirect": "projects"
+        "message": "The code for this personal website",
+        "redirect": "https://github.com/n10dollar/n10dollar.github.io"
     },
     {
         "month": "May",
         "year": 2022,
         "header": "Keyboard Visualizer",
         "message": "This is a keyboard visualizer I built",
-        "redirect": "projects"
+        "redirect": "https://github.com/n10dollar/neil-website"
     }
 ]

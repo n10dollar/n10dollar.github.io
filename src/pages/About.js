@@ -1,4 +1,4 @@
-import {Container, Grid, Typography} from "@mui/material";
+import {Container, Stack, Grid, Typography} from "@mui/material";
 import {useState, useEffect} from "react"
 
 import ImageGallery from "../components/ImageGallery";
@@ -10,24 +10,12 @@ function About() {
 
     return (
         <Container>
-            <Grid container spacing={2}>
-                <Grid item xs={12} md={6}>
-                    <Typography variant={"body1"}>
-                        {aboutMe}
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={3}>
-                    <Typography variant={"body1"}>
-                        {aboutMe}
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} md={3}>
-                    <Typography variant={"body1"}>
-                        {aboutMe}
-                    </Typography>
-                </Grid>
-            </Grid>
-            <ImageGallery />
+            <Stack py={2}>
+                <Typography variant={"body1"}>
+                    {aboutMe}
+                </Typography>
+                <ImageGallery />
+            </Stack>
         </Container>
     )
 }
