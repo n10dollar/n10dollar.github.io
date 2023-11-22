@@ -17,3 +17,15 @@ function compareProjectsDescending(proj1, proj2) {
 
     return proj2Val - proj1Val
 }
+
+export function fetchText(effectHook, val, setVal, URL) {
+    effectHook(() => {
+        fetch(URL)
+            .then(response => response.text())
+            .then(textContext => {
+                setVal(textContext)
+                console.log(textContext)
+            })
+            .catch(error => console.log(error))
+    }, [])
+}

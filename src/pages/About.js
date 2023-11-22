@@ -3,19 +3,11 @@ import {useState, useEffect} from "react"
 
 import URL from "../data/text/about_me.txt"
 import ImageGallery from "../components/ImageGallery";
+import {fetchText} from "../utils/general"
 
 function About() {
     const [aboutMe, setAboutMe] = useState("")
-
-    useEffect(() => {
-        fetch(URL)
-            .then(response => response.text())
-            .then(textContext => {
-                setAboutMe(textContext)
-                console.log(textContext)
-            })
-            .catch(error => console.log(error))
-    }, [])
+    fetchText(useEffect, aboutMe, setAboutMe, URL)
 
     return (
         <Container>
